@@ -255,7 +255,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	background-color: #fff;
 }
 .header_s .ownavigation {
-	padding: 0 15px;
+	padding: 0 0px;
 }
 .header_s .ownavigation .navbar-brand {
 	color: #000000;
