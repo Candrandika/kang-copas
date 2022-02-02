@@ -1,0 +1,75 @@
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.medsos{
+	padding: 10px 0;
+}
+.medsos ul li{
+	display: inline-block;
+	color: white;
+	margin-right: 10px;	
+}
+.url {
+    width: 70%;
+    text-align: center;
+    padding: 13px 200px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(55, 10, 144, .5);
+    margin-bottom: 15px;
+    transition: 5s;
+}
+.explorelink {
+    width: 20%;
+    text-align: center;
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(197, 57, 216, 0.5);
+    margin-bottom: 15px;
+    transition: 5s;
+}
+.url:focus {
+    background-color: rgba(55, 10, 144, .7);
+}
+.explorelink:focus{
+    background-color: rgba(55, 10, 144, .7);
+}
+.url:hover {
+    background-color: #1f0344;
+}
+.explorelink:hover{
+    background-color: #77196f;
+}
+
+
+
+
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.medsos{
+	padding: 5px 45;
+	background-color: #cd94db ;
+}
+.medsos ul li{
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px;	
+}
+.bawah{
+	width: 80%;
+	margin: 0 auto;
+}
+.bawah:after{
+	content:'';
+	display: block;
+	clear: both;
+}
