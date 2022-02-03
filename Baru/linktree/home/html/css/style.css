@@ -25,7 +25,9 @@
 /*-------------------------------------------------------*/
 /* 1. Isotope filtering
 /*-------------------------------------------------------*/
-.isotope-item {
+.tinggi{
+  height: 90px;
+}.isotope-item {
   z-index: 2;
 }
 .isotope-hidden.isotope-item {
@@ -3436,3 +3438,17 @@ footer.pattern-style p.copyright {
     text-align: center;
   }
 }
+.url {
+  width: 70%;
+  text-align: center;
+  padding: 10px 150px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(40, 157, 211);
+  margin-bottom: 15px;
+  transition: 5px;
+
+}
+
