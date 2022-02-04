@@ -13,7 +13,46 @@
 	<link rel="stylesheet" href="css/kinetic-assets.min.css">
 	<link rel="stylesheet" href="css/line-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
-
+	<style>.edit{
+		background-color: blue;
+		color: #fff;
+		padding: 5px;
+		text-decoration: none;
+		font-size: 12px;
+	}
+	.hapus{
+		background-color: rgb(255, 0, 0);
+		color: #fff;
+		padding: 5px;
+		text-decoration: none;
+		font-size: 12px;
+	}
+	.table{
+		border: solid 1px #DDEEEE;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 80%;
+      margin: 10px auto 10px auto;
+	}
+	table thead th {
+        background-color: #0754fa;
+        border: solid 1px #DDEEEE;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+	table tbody td {
+        border: solid 1px #DDEEEE;
+        background-color: #F0FFFF;
+		text-align: center;
+        color: #333;
+        padding: 10px;
+    }
+	.input{
+		width: 80%;
+	}
+	</style>
 
 </head>
 <body>
@@ -74,12 +113,12 @@
 						<form action="" method="post" enctype="">
 							<fieldset>
 
-
+								<br>
 								<label for="title">Title</label>
-								<input type="text" name="title" placeholder="title" id="title"><br><br>
+								<input class="input" type="text" name="title" placeholder="title" id="title"><br><br>
 
 								<label for="url">URL</label>
-								<input type="text" name="url" placeholder="url" id="url"><br><br>
+								<input class="input" type="text" name="url" placeholder="url" id="url"><br><br>
 
 								<button class="btn btn-primary mx-auto" type="sumbit" name="tambah" value="tambah">Update</button>
 							</fieldset>
@@ -90,20 +129,18 @@
 					<table border="1" align="center">
  		<thead>
  			<tr>
-				<th scope="col-sm-3">No</th>
-				<th scope="col-sm-3">Title</th>
- 				<th scope="col-sm-3">URL</th>
- 				<th scope="col-sm-3">Update</th>
+				<th class="col-md-3">Title</th>
+ 				<th class="col-md-3">URL</th>
+				<th class="col-md-3">Update</th>
  			</tr>
  		</thead>
  		<tbody>
  			<tr>
- 					<td>1</td>
  					<td>Facebook</td>
 					<td>facebook.com</td>
  					<td>
- 						<a href='form-edit.php?nik=".$warga['nik']."'><div class='edit'>Edit</div></a>
- 					 <a href='hapus.php?nik=".$warga['nik']."'><div class='delete'>Hapus</div></a>
+ 						<a class="edit" href=''>Edit</a>|
+ 						<a class="hapus" href=''>Hapus</a>
  					</td>
  					
  			</tr>
