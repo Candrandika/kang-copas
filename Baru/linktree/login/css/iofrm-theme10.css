@@ -156,14 +156,14 @@
 }
 
 .form-content input, .form-content .dropdown-toggle.btn-default {
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.15);
+    border: 1;
+    background-color: #ccc;
     color: #000;
 }
 
 .form-content input:hover, .form-content input:focus, .form-content .dropdown-toggle.btn-default:hover, .form-content .dropdown-toggle.btn-default:focus {
-    border: 0;
-    background-color: #000;
+    border: 1;
+    background-color: #eee;
     color: #8D8D8D;
 }
 
@@ -235,8 +235,8 @@
 }
 
 .form-content .form-button .ibtn {
-    background-color: rgb(248, 246, 246);
-    color: #111111;
+    background-color: #111;
+    color: #ddd;
     -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);
 }
