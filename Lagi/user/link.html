@@ -23,7 +23,7 @@
   <body>
     
     <!-- Header -->
-    <div class="container-fluid bg-dark sticky-top">
+    <div class="container-fluid sticky-top" style="background-color: #f16c69;">
       <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  border-bottom">
         <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
           <img src="../images/s.png">
@@ -36,7 +36,7 @@
         </ul>
 
         <div class="col-md-3 text-end">
-          <a class="btn btn-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i>Akun</a>
+          <a class="btn btn-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f16c69;"><i class="bi bi-person"></i>Akun</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Home</a></li>
             <li><a class="dropdown-item" href="setting.html">Pengaturan</a></li>
@@ -55,7 +55,7 @@
         <div class="col-6">
           <div class="add-section white">
             <ul>
-              <span class="btn-dark px-5 py-2 rounded-pill">Tambahkan link baru</span>
+              <strong class="mx-5">Tambahkan link baru</strong>
             </ul>
     
             <form action="" method="post">
@@ -68,35 +68,35 @@
                   <label for="url">URL</label>
                   <input class="input px-5 text-center" type="text" name="url" placeholder="url" id="url"><br><br>
                 </div>
-                <button class="btn btn-primary mt-4" type="sumbit" name="tambah" value="tambah">Update</button>
+                <button class="btn btn-primary mt-4 border-0" type="sumbit" name="tambah" value="tambah" style="background-color: #f16c69; margin-left: 20%;">Tambah</button>
               </fieldset>
             </form>
           </div>
         </div>
         <div class="col-6">
           <table class="table text-center" border="1" align="center">
-            <thead class="table-dark">
+            <thead class="table text-light" style="background-color: #f16c69;">
               <tr>
                 <th class="col-3">Title</th>
                 <th class="col-3">URL</th>
                 <th class="col-3">Update</th>
               </tr>
             </thead>
-            <tbody class="table-light">
+            <tbody class="table-light" borderx-1>
               <tr>
                 <td>Facebook</td>
                 <td>facebook.com</td>
                 <td>
-                  <a class="btn btn-success px-1 py-0 mx-0" href=''>Edit</a>
-                  <a class="btn btn-danger px-1 py-0 mx-0" href=''>Hapus</a>
+                  <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-pencil"></i></a>
+                  <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-trash3"></i></a>
                 </td>  
               </tr>
               <tr>
                 <td>Instagram</td>
                 <td>instagram.com</td>
                 <td>
-                  <a class="btn btn-success px-1 py-0 mx-0" href=''>Edit</a>
-                  <a class="btn btn-danger px-1 py-0 mx-0" href=''>Hapus</a>
+                  <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-pencil"></i></a>
+                  <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-trash3"></i></a>
                 </td>  
               </tr>
             </tbody>
@@ -108,19 +108,19 @@
     <!-- /Main Content -->
 
     <!-- Footer -->
-    <div class="container-fluid bg-dark fixed-bottom">
+    <div class="container-fluid fixed-bottom" style="background-color: #f16c69;">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
             <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
           </a>
-          <span class="text-muted">© 2022 Company, Inc</span>
+          <span class="text-light">© 2022 Company, Inc</span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="https://www.twitter.com"><i class="bi bi-twitter " width="24" height="24"></i></a></li>
-          <li class="ms-3"><a class="text-muted" href="https://www.instagram.com"><i class="bi bi-instagram" width="24" height="24"></i></a></li>
-          <li class="ms-3"><a class="text-muted" href="https://www.facebook.com"><i class="bi bi-facebook" width="24" height="24"></i></a></li>
+          <li class="ms-3"><a class="text-light" href="https://www.twitter.com"><i class="bi bi-twitter " width="24" height="24"></i></a></li>
+          <li class="ms-3"><a class="text-light" href="https://www.instagram.com"><i class="bi bi-instagram" width="24" height="24"></i></a></li>
+          <li class="ms-3"><a class="text-light" href="https://www.facebook.com"><i class="bi bi-facebook" width="24" height="24"></i></a></li>
         </ul>
       </footer>
     </div>
