@@ -66,7 +66,7 @@
 
 
             <div class="dropdown d-none d-lg-inline-block align-self-center">
-                <button class="btn btn-header waves-effect aria-expanded="false">
+                <button class="btn btn-header waves-effect" data-bs-toggle="collapse" data-bs-target="#add-collapse" aria-expanded="false" aria-control="add-collapse">
                     Create New
                 </button>
             </div>
@@ -329,11 +329,11 @@
             <div class="main-content">
 
                 <div class="page-content">
-                    <div class="container mt-5">
+                    <div class="container my-5">
                       <div class="row">
                         <div class="col-6">
-                          <div class="add-section white">
-                            <div class="card-text border mx-5 p-5">
+                          <div class="collapse" id="add-collapse">
+                            <div class="card-text border mb-5">
                               <form>
                                 <div class="mb-3">
                                   <label for="title" class="form-label">Title</label>
@@ -392,7 +392,7 @@
                           </table>
                         </div>
                         <div class="col-2"></div>
-                        <div class="col-4 my-5">
+                        <div class="col-4">
                             <div  class="bg-primary rounded">
                                 <img src="../tree-template/nopic-male.jpg" width="10%" class="py-4 d-block mx-auto rounded-circle">
                                 <h5 align="center" class="text-light my-1">@username</h3>
