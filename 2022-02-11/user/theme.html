@@ -30,7 +30,7 @@
           }
 
           /* HIDE RADIO */
-          [type=radio] { 
+          [class=radio-image] { 
             position: absolute;
             opacity: 0;
             width: 0;
@@ -38,12 +38,12 @@
           }
 
           /* IMAGE STYLES */
-          [type=radio] + img {
+          [class=radio-image] + img {
             cursor: pointer;
           }
 
           /* CHECKED STYLES */
-          [type=radio]:checked + img {
+          [class=radio-image]:checked + img {
             outline: 2px solid #f00;
           }
         </style>
@@ -370,10 +370,26 @@
                 <div class="page-content">
                     <div class="container mt-5">
                       <form action="link.html">
-                        <input id="inputColor" type="color" value="#ff1a1a"/>
-                      <div class="m-auto d-block">
-                        <center><button value="save" class="btn btn-primary border-0 mb-5" style="background-color:#f16c69;">Simpan</button></center>
-                      </div>
+                        <div class="m-auto d-block">
+                            <center><button value="save" class="btn btn-primary border-0 mb-5" style="background-color:#f16c69;">Simpan</button></center>
+                        </div>
+                        <div>
+                            <input type="radio" name="theme" id="custom">
+                            <label for="custom">Custom</label>
+                            <div>
+                                <label>Main Background</label>
+                                <input id="inputColor" type="color"/>
+                            </div>
+                            <div>
+                                <label>Button Background</label>
+                                <input id="inputColor" type="color"/>
+                            </div>
+                            <div>
+                                <label>Button Text</label>
+                                <input id="inputColor" type="color"/>
+                            </div>
+                        </div>
+                        
                       <div class="row">
                         <div class="col-md-4 my-2" style="">
                           <div class="card shadow-sm">
@@ -385,7 +401,7 @@
                               </div>
                             </div>
                             <label>
-                            <input type="radio" name="theme" value="1" checked>
+                            <input type="radio" name="theme" class="radio-image" value="1" checked>
                             <img src="../upload/1.jpg" width="100%">
                             </label>
 
@@ -404,7 +420,7 @@
                               </div>
                             </div>
                             <label>
-                            <input type="radio" name="theme" value="2">
+                            <input type="radio" name="theme" class="radio-image" value="2">
                             <img src="../upload/2.jpg" width="100%">
                             </label>
                             
@@ -421,7 +437,7 @@
                               </div>
                             </div>
                             <label>
-                            <input type="radio" name="theme" value="3">
+                            <input type="radio" name="theme" class="radio-image" value="3">
                             <img src="../upload/3.jpg" width="100%">
                             </label>
                             
@@ -437,7 +453,7 @@
                               </div>
                             </div>
                             <label>
-                            <input type="radio" name="theme" value="4">
+                            <input type="radio" name="theme" class="radio-image" value="4">
                             <img src="../upload/4.jpg" width="100%">
                             </label>
                             
@@ -453,7 +469,7 @@
                               </div>
                             </div>
                             <label>
-                            <input type="radio" name="theme" value="5">
+                            <input type="radio" name="theme" class="radio-image" value="5">
                             <img src="../upload/5.jpg" width="100%">
                             </label>
                             
@@ -469,7 +485,7 @@
                               </div>
                             </div>
                             <label>
-                            <input type="radio" name="theme" value="6">
+                            <input type="radio" name="theme" class="radio-image" value="6">
                             <img src="../upload/6.jpg" width="100%">
                             </label>
                             
