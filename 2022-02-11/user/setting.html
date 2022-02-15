@@ -326,39 +326,51 @@
 
                 <div class="page-content">
                     <div class="container mt-5">
-                      <div style="margin-left: 42%;">
+                    <form action="" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                      <div class="col-2">
                         <img src="img/nopic-male.jpg" width="150px" class="rounded-circle center mx-auto">
                       </div>  
 
+                      <div class="col-10">
                       <div class="input-group my-3">
                         <input type="file" class="form-control" id="inputGroupFile02">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Ubah</button>
                       </div>
                       <label for="basic-url" class="form-label">Bio</label>
-                      <div class="input-group">
-                        <textarea class="form-control" placeholder="your bio" id="bio"></textarea>
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Ubah</button>
+                        <textarea class="form-control" placeholder="your bio" id="bio" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, debitis atque aspernatur est, aperiam expedita repudiandae tempore nulla cumque</textarea>
+                      </div>
                       </div>
 
+                      <div class="row">
+                      <div class="col">
                       <label for="basic-url" class="form-label">Username</label>
                       <div class="input-group mb-3">
                         <span class="input-group-text" id="addon-wrapping">@</span>
-                        <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Ubah</button>
+                        <input type="text" class="form-control" placeholder="username" value="username" aria-label="username" aria-describedby="button-addon2">
+                        
                       </div>
-
-                      <label for="basic-url" class="form-label">E-mail</label>
-                      <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="e-mail" aria-label="email" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Ubah</button>
-                      </div>
-
-                      <label for="basic-url" class="form-label">Password</label>
+                      <label for="basic-url" class="form-label">Password Lama</label>
                       <div class="input-group mb-3">
                         <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Ubah</button>
+                        
                       </div>
 
+                      
+                      </div>
+
+                      <div class="col">
+                      <label for="basic-url" class="form-label">E-mail</label>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="e-mail" value="email@gmail.com" aria-label="email" aria-describedby="button-addon2">
+                      </div>
+                      <label for="basic-url" class="form-label">Password Baru</label>
+                      <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="button-addon2">
+                      </div>
+                      </div>
+                      </div>
+                      <button class="btn btn-primary">Ubah</button>
+                    </form>
                     </div>
                     <!-- Container-fluid -->
                 </div>
