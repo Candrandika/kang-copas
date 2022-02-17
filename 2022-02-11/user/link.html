@@ -308,8 +308,49 @@
                                   <label for="url" class="form-label">URL</label>
                                   <input type="text" class="form-control" id="url" placeholder="https://www.example.com">
                                 </div>
+                                <button type="button" class="btn btn-primary border-0" style="background-color:#f16c69;" data-bs-toggle="modal" data-bs-target="#iconModal">icon</button>
                                 <button type="submit" class="btn btn-primary border-0" style="background-color:#f16c69;">Add Link</button>
-                                
+
+                                <!-- modal -->
+                                <div id="iconModal" class="modal fade" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                                    <div class="modal-content shadow-lg">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Modal title</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row">
+                                                                <div class="col-2 fs-1"><i class="bi bi-behance"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-discord"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-dribbble"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-facebook"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-github"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-google"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-instagram"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-line"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-linkedin"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-messenger"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-pinterest"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-reddit"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-skype"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-snapchat"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-stack-overflow"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-telegram"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-twitch"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-twitter"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-whatsapp"></i></div>
+                                                                <div class="col-2 fs-1"><i class="bi bi-youtube"></i></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.modal-content -->
+                                                </div>
+                                </div>
                               </form>            
                             </div>
                           </div>
@@ -318,6 +359,7 @@
                               <tr >
                                 <th class="col-3 border-end">Title</th>
                                 <th class="col-3 border-end">URL</th>
+                                <th class="col-3 border-end">Icon</th>
                                 <th class="col-3">Update</th>
                               </tr>
                             </thead>
@@ -325,6 +367,7 @@
                               <tr>
                                 <td class="border-end">Facebook</td>
                                 <td class="border-end">facebook.com</td>
+                                <td class="border-end"><i class="bi bi-facebook"></i></td>
                                 <td>
                                   <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-pencil"></i></a>
                                   <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-trash3"></i></a>
@@ -333,6 +376,7 @@
                               <tr>
                                 <td class="border-end">Instagram</td>
                                 <td class="border-end">instagram.com</td>
+                                <td class="border-end"><i class="bi bi-instagram"></i></td>
                                 <td>
                                   <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-pencil"></i></a>
                                   <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-trash3"></i></a>
@@ -341,6 +385,7 @@
                               <tr>
                                 <td class="border-end">Youtube</td>
                                 <td class="border-end">youtube.com</td>
+                                <td class="border-end"><i class="bi bi-youtube"></i></td>
                                 <td>
                                   <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-pencil"></i></a>
                                   <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-trash3"></i></a>
@@ -349,6 +394,7 @@
                               <tr>
                                 <td class="border-end">Whatsapp</td>
                                 <td class="border-end">whatsapp.com</td>
+                                <td class="border-end"><i class="bi bi-whatsapp"></i></td>
                                 <td>
                                   <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-pencil"></i></a>
                                   <a class="btn px-1 py-0 mx-0 text-light" href='' style="background-color: #f16c69;"><i class="bi bi-trash3"></i></a>
@@ -367,21 +413,40 @@
                                 <div class="container">
                                     <div class="col-12">
                                             <div class="text-center">
-                                                
-                                                <div class="my-3">
-                                                    <a href='https://web.facebook.com/' target="_blank" type="button" class="btn btn-light text-primary py-1 fs-6" style="width: 60%; font-weight: 600;">Facebook</a>
-                                                </div>
-                                                <div class="my-3">
-                                                    <a href='https://www.instagram.com' target="_blank" type="button" class="btn btn-light text-primary py-1 fs-6" style="width: 60%; font-weight: 600;"> Instagram</a>
-                                                </div>
-                                                <div class="my-3">
-                                                    <a href='https://www.youtube.com/' target="_blank" type="button" class="btn btn-light text-primary py-1 fs-6" style="width: 60%; font-weight: 600;">YouTube</a>
-                                                </div>
-                                                <div class="my-3">
-                                                    <a href='https://www.whatsapp.com' target="_blank" type="button" class="btn btn-light text-primary py-1 fs-6" style="width: 60%; font-weight: 600;">whatsapp</a>
-                                                </div>
-                                                <br>
-                                            </div>
+                        <div class="my-4">
+                            <a href='https://web.facebook.com/' target="_blank" type="button" class="btn btn-light py-2" style="width: 60%; font-weight: 600;">
+                                <div class="row">
+                                    <i class="bi bi-facebook col-2"></i>
+                                    <div class="col-8">Facebook</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="my-4">
+                            <a href='https://www.instagram.com' target="_blank" type="button" class="btn btn-light py-2" style="width: 60%; font-weight: 600;">
+                                <div class="row">
+                                    <i class="bi bi-instagram col-2"></i>
+                                    <div class="col-8">Instagram</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="my-4">
+                            <a href='https://www.youtube.com/' target="_blank" type="button" class="btn btn-light py-2" style="width: 60%; font-weight: 600;">
+                                <div class="row">
+                                    <i class="bi bi-youtube col-2"></i>
+                                    <div class="col-8">Youtube</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="my-4">
+                            <a href='https://www.whatsapp.com' target="_blank" type="button" class="btn btn-light py-2" style="width: 60%; font-weight: 600;">
+                                <div class="row">
+                                    <i class="bi bi-whatsapp col-2"></i>
+                                    <div class="col-8">Whatsapp</div>
+                                </div>
+                            </a>
+                        </div>
+                        <br>
+                    </div>
                                     </div>
                                  </div>
                             </div>
