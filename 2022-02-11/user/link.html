@@ -24,6 +24,28 @@
         <!-- App Css-->
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+        <style>
+
+          /* HIDE RADIO */
+          [class=radio-icon] { 
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+
+          /* IMAGE STYLES */
+          input[class=radio-icon] + label {
+            cursor: pointer;
+          }
+
+          /* CHECKED STYLES */
+          input[class=radio-icon]:checked + label {
+            background: #555;
+            color: #fff;
+          }
+        </style>
+
     </head>
 
     <body data-topbar="colored">
@@ -316,31 +338,51 @@
                                     <div class="modal-dialog">
                                                     <div class="modal-content shadow-lg">
                                                         <div class="modal-header">
-                                                            <h5 class="modal-title">Modal title</h5>
+                                                            <h5 class="modal-title">Select icon</h5>
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="row">
-                                                                <div class="col-2 fs-1"><i class="bi bi-behance"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-discord"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-dribbble"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-facebook"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-github"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-google"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-instagram"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-line"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-linkedin"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-messenger"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-pinterest"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-reddit"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-skype"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-snapchat"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-stack-overflow"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-telegram"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-twitch"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-twitter"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-whatsapp"></i></div>
-                                                                <div class="col-2 fs-1"><i class="bi bi-youtube"></i></div>
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="behance" value="behance" checked><label for="behance"><i class="p-2 bi bi-behance"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="discord" value="discord"><label for="discord"><i class="p-2 bi bi-discord"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="dribbble" value="dribbble"><label for="dribbble"><i class="p-2 bi bi-dribbble"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="facebook" value="facebook"><label for="facebook"><i class="p-2 bi bi-facebook"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="github" value="github"><label for="github"><i class="p-2 bi bi-github"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="google" value="google"><label for="google"><i class="p-2 bi bi-google"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="instagram" value="instagram"><label for="instagram"><i class="p-2 bi bi-instagram"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="line" value="line"><label for="line"><i class="p-2 bi bi-line"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="linkedin" value="linkedin"><label for="linkedin"><i class="p-2 bi bi-linkedin"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="messenger" value="messenger"><label for="messenger"><i class="p-2 bi bi-messenger"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="pinterest" value="pinterest"><label for="pinterest"><i class="p-2 bi bi-pinterest"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="reddit" value="reddit"><label for="reddit"><i class="p-2 bi bi-reddit"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="skype" value="skype"><label for="skype"><i class="p-2 bi bi-skype"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="snapchat" value="snapchat"><label for="snapchat"><i class="p-2 bi bi-snapchat"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="stack-overflow" value="stack-overflow"><label for="stack-overflow"><i class="p-2 bi bi-stack-overflow"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="telegram" value="telegram"><label for="telegram"><i class="p-2 bi bi-telegram"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="twitch" value="twitch"><label for="twitch"><i class="p-2 bi bi-twitch"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="twitter" value="twitter"><label for="twitter"><i class="p-2 bi bi-twitter"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="whatsapp" value="whatsapp"><label for="whatsapp"><i class="p-2 bi bi-whatsapp"></i></label></div>
+
+                                                                <div class="col-2 fs-1"><input type="radio" name="icon" class="radio-icon" id="youtube" value="youtube"><label for="youtube"><i class="p-2 bi bi-youtube"></i></label></div>
+
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
