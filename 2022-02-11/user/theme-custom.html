@@ -318,12 +318,14 @@
                         
                         <div class="col-1"></div>
                         <div class="col-4">
-                            <div  class="rounded color-indicator" id="color-indicator">
+
+
+                            <div  class="rounded color-indicator" id="color-indicator" style="background-color:#444;">
                                 
                                 <img src="../tree-template/nopic-male.jpg" width="10%" class="py-4 d-block mx-auto rounded-circle">
-                                <div class="color-indicator3" id="color-indicator3">
-                                <h5 align="center" class="text-light my-1 color-indicator3" id="color-indicator3" >@username</h3>
-                                <p align="center" class="lead text-light mb-4" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <div class="color-indicator3" id="color-indicator3" style="color: #fff;">
+                                <p align="center" class="my-1 fs-5">@username</p>
+                                <p align="center" class="lead mb-4" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                                 </div>
                                 
                                 <div class="container">
@@ -468,7 +470,7 @@
     <script>
         let colorIndicator = document.getElementById('color-indicator');
         const colorPicker = new iro.ColorPicker("#color-picker", {
-            width:180, color: "#fff"
+            width:180
         });
         colorPicker.on('color:change', function(color){
             colorIndicator.style.backgroundColor = color.hexString;
@@ -476,7 +478,7 @@
 
         let colorIndicator1 = document.getElementById('color-indicator1');
         const colorPicker1 = new iro.ColorPicker("#color-picker1", {
-            width:180, color: "#fff"
+            width:180
         });
         colorPicker1.on('color:change', function(color){
             colorIndicator1.style.backgroundColor = color.hexString;
@@ -484,14 +486,14 @@
 
         let colorIndicator2 = document.getElementById('color-indicator2');
         const colorPicker2 = new iro.ColorPicker("#color-picker2", {
-            width:180, color: "#fff"
+            width:180
         });
         colorPicker2.on('color:change', function(color){
             colorIndicator2.style.color = color.hexString;
         });
         let colorIndicator3 = document.getElementById('color-indicator3');
         const colorPicker3 = new iro.ColorPicker("#color-picker3", {
-            width:180, color: "#fff"
+            width:180
         });
         colorPicker3.on('color:change', function(color){
             colorIndicator3.style.color = color.hexString;
