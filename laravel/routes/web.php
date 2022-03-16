@@ -31,3 +31,7 @@ Route::get('/edit/{nik}',[WargaController::class, 'edit']);
 Route::post('/edit/update',[WargaController::class, 'update']);
 
 Route::get('/hapus/{nik}',[WargaController::class, 'hapus']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
