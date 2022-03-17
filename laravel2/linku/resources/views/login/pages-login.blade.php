@@ -6,7 +6,7 @@
 <head>
 
         <meta charset="utf-8" />
-        <title>Login | Agroxa - Responsive Bootstrap 5 Admin Dashboard</title>
+        <title>Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -14,11 +14,11 @@
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
         <!-- Bootstrap Css -->
-        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
         <!-- App Css-->
-        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -47,16 +47,28 @@
                         <h4 class="text-muted font-size-18 text-center">Selamat Datang Di LinkU.com</h4>
                         <p class="text-muted text-center">Silahkan login terlebih dahulu, atau register jika belum memiliki akun</p>
 
-                        <form class="form-horizontal" action="../user/link.html">
+                        @if (session()->has('loginError'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{ session('loginError') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                            </div>
+                        @endif
 
+                        <form class="form-horizontal" action="login" method="POST">
+                            @csrf
                             <div class="mb-3">
-                                <label class="form-label" for="username">E-mail Address</label>
-                                <input type="text" class="form-control" id="username" placeholder="Enter E-mail Address">
+                                <label class="form-label" for="email">Alamat Email</label>
+                                <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Masukkan alamat email" autofocus value="{{ old ('email') }}">
+                                @error('email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label" for="userpassword">Password</label>
-                                <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Masukkan kata sandi">
                             </div>
 
                             <div class="mb-3 row">
