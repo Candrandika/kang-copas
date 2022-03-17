@@ -18,20 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+// Route::get('/home', function () {
+//     return view('home');
+// });
 
-Route::get('/list-warga',[WargaController::class, 'index']);
+// Route::get('/list-warga',[WargaController::class, 'index']);
 
-Route::get('/daftar',[WargaController::class, 'tambah']);
-Route::post('/simpan',[WargaController::class, 'simpan']);
+// Route::get('/daftar',[WargaController::class, 'tambah']);
+// Route::post('/simpan',[WargaController::class, 'simpan']);
 
-Route::get('/edit/{nik}',[WargaController::class, 'edit']);
-Route::post('/edit/update',[WargaController::class, 'update']);
+// Route::get('/edit/{nik}',[WargaController::class, 'edit']);
+// Route::post('/edit/update',[WargaController::class, 'update']);
 
-Route::get('/hapus/{nik}',[WargaController::class, 'hapus']);
+// Route::get('/hapus/{nik}',[WargaController::class, 'hapus']);
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');

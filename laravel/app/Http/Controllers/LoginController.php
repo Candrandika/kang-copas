@@ -11,9 +11,9 @@ class LoginController extends Controller
 {
     public function login(){
         if(auth::check()) {
-            return redirect('home');
+            return redirect('user.link');
         }else{
-            return view('login');
+            return view('login.login');
         }
     }
 
@@ -23,15 +23,15 @@ class LoginController extends Controller
             'password' => $request->input('password'),
         ];
         if(auth::attempt($data)) {
-            return redirect('home');
+            return redirect('user.link');
         }else{
             Session::FLASH('error', 'Email atau Password Salah');
-            return redirect('/');
+            return redirect('non-user.index');
         }
     }
 
     public function actionlogout(){
         Auth::logout();
-        return redirect('/');
+        return redirect('non-user.index');
     }
 }
