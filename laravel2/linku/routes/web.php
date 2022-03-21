@@ -24,7 +24,7 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->middleware('guest');
 
-Route::get('/register', [RegisterController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/login', [LoginController::class, 'index']);

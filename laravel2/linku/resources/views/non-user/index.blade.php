@@ -101,8 +101,8 @@
             <!-- Login Register -->
 
             <div class="d-inline-block mt-3">
-                <a href="../login/pages-login.html" class="btn btn-outline-light me-2">Masuk</a>
-                <a href="../login/pages-register.html" class="btn btn-light" style="color: #f16c69;">Daftar</a>
+                <a href="login" class="btn btn-outline-light me-2">Masuk</a>
+                <a href="register" class="btn btn-light" style="color: #f16c69;">Daftar</a>
             </div>
             
 
@@ -216,9 +216,9 @@
                           <div class="col-lg-6">
                             <h1 class="display-5 fw-bold lh-1 mb-5 link-light">Cukup Satu Tautan</h1>
                             <p class="lead link-light">Hubungkan semua akun sosial media anda hanya dengan satu tautan saja.</p>
-                            <p class="lead link-light">Sudah punya akun? <a href="../login/pages-login.html" style="text-decoration: none; color:#f16c69;">MASUK</a></p>
+                            <p class="lead link-light">Sudah punya akun? <a href="login" style="text-decoration: none; color:#f16c69;">MASUK</a></p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                              <a href="../login/pages-register.html" class="btn btn-primary btn-lg px-4 me-md-2" style="background-color: #f16c69;">Mulai Sekarang</a>
+                              <a href="register" class="btn btn-primary btn-lg px-4 me-md-2" style="background-color: #f16c69;">Mulai Sekarang</a>
                             </div>
                           </div>
                         </div>
