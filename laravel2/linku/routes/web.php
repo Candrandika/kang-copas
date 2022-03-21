@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 
 
 
@@ -31,3 +32,8 @@ Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'authenticate']);
 
 Route::get('/home', [UserController::class, 'index']);
+
+
+
+// Admin
+Route::get('/admin/table-user', [AdminController::class, 'table_user']);
